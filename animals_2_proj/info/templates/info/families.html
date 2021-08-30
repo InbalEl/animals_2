@@ -1,0 +1,14 @@
+{% extends 'info/global_app.html' %}
+
+{% block title %}
+{{ Families }}
+{% endblock title %}
+
+{% block content %}
+<h2>Families:</h2>
+    <ul>
+        {% for family in families %}
+        <li>{{ family.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
