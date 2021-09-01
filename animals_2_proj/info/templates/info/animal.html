@@ -6,4 +6,6 @@
 
 {% block content %}
 <h1>{{animal.id}}: {{animal.name}}</h1>
+<h2> Family: <a href="{% url 'family' family.id %}"> {{ family.name }} </a></h2>
+<img src="{{animal.image}}" alt="bear" width="100px">
 {% endblock content %}
