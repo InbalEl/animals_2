@@ -15,7 +15,7 @@ class Animal(models.Model):
     height = models.SmallIntegerField()
     Speed = models.SmallIntegerField()
     family = ForeignKey(Family, models.CASCADE)
-    image = models.ImageField(upload_to='images/')
+    image = models.ImageField()
 
     def __str__(self) -> str:
         return self.name
